@@ -59,5 +59,4 @@ context("Negative cases", () => {
       expect(body.errors.title).contains("must be unique");
     });
   });
-
 });
