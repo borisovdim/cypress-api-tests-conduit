@@ -1,0 +1,42 @@
+[
+  {
+    "article": {
+      "title": "Climbing Forbidden Mountain",
+      "description": "Chinese nature preserve closed to foreigners",
+      "body": "From the pinnacle of Mao’er Mountain, the view of clouds undulating and breaking around lower peaks beneath the rising sun is breathtaking, majestic and inspiring. Experiencing this sunrise necessitated my following in the footsteps of Chairman Mao. He’d climbed the same treacherous trail to the top seven decades earlier during The Long March — considered the historical low point for the Communists in China’s decades-long civil war.",
+      "tagList": [
+        "Mountain", "Climbing", "China", "Nature"
+      ]
+    }
+  },
+  {
+    "article": {
+      "title": "JavaScript Interview Questions in 2024",
+      "description": "Do you know the answers?",
+      "body": "I’ve been doing JavaScript interviews for a while now, and I’ve met many people who, despite knowing they were coming for a JavaScript interview, were either unfamiliar with JavaScript or were not adequately prepared.",
+      "tagList": [
+        "JavaScript", "Questions", "Interview", "IT"
+      ]
+    }
+  },
+  {
+    "article": {
+      "title": "What is it About Music that Plucks the Strings of Grief so Furiously?",
+      "description": "Perhaps music is closer to emotion than any other art can be",
+      "body": "Three times in the past few weeks I have found myself in tears. Three times! This is not normal for me; sadness is not my métier. A descent into tears is as unusual for my remorselessly cheerful nature as passing up a good bakery. There are reasons for grief.",
+      "tagList": [
+        "Plucks", "Grief", "Nature"
+      ]
+    }
+  },
+  {
+    "article": {
+      "title": "The Small Idaho Town Ravaged By A Herd Of Elephants",
+      "description": "In the 1920s, a quiet community was thrust into the headlines after its Mayor had to take on a herd of frightened circus animals",
+      "body": "Small communities in Idaho are not typically associated with bands of elephants. That is except for one very unusual situation from nearly a century ago where five of the animals escaped from a traveling circus and wreaked so much havoc on a small town that the mayor ended up having to shoot one of them.",
+      "tagList": [
+        "Nature", "Elephants", "1920s", "Idaho", "Belle-Floto Circus"
+      ]
+    }
+  }
+]
