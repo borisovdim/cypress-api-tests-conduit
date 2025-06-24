@@ -40,16 +40,14 @@
 import testUser from "../fixtures/test-user.json";
 
 Cypress.Commands.add("login", (email, password) => {
-  cy.request("POST", "https://api.realworld.io/api/users/login", {
-    user: {
-      email: email,
-      password: password,
-    },
+  return cy.request("POST", Cypress.env('apiBaseURL') + "/users/login", {
+    user: { email, password },
   }).then(({ status, body }) => {
     expect(status).to.eq(200);
     expect(body).to.have.key("user");
     const { user } = body;
-    cy.writeFile("tmp/token.txt", user.token);
+
+    return cy.writeFile("tmp/token.txt", user.token);
   });
 });
 

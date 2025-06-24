@@ -1,6 +1,6 @@
 declare namespace Cypress {
   interface Chainable {
-    login(email: string, password: string): void;
+    login(email: string, password: string): any;
     visitTo(path?: string): void;
     setJwtToken(window, token: string): void;
     apiRequest(method: string, url: string, body?: object | string);

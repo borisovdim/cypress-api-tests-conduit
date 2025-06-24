@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 export class NewArticle {
 
   typeTitle(text: string) {

@@ -20,7 +20,7 @@ export const noAuthEditArticle = (slug, body) => {
 }; 
 
 export const getUsersArticle = (limit, offset) => {
-  return cy.readRequest(Cypress.env('apiBaseURL') + `/articles/feed?limit=${limit}&offset=${offset}`);
+  return cy.readRequest(Cypress.env('apiBaseURL') + `/articles?limit=${limit}&offset=${offset}`);
 };
 
 export const getNoAuthUsersArticle = (limit, offset) => {

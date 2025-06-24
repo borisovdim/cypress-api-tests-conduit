@@ -42,12 +42,14 @@ describe("Article creation", () => {
   
       articlePage.typeComment(article.tagList[2]);
       articlePage.postComment();
+      articlePage.commentIsAdded();
   
       header.getCurrentUserLogo(name).click();
       userPage.getArticleByTitle(article.title).should("exist").click();
   
       articlePage.checkContent(article.body);
       articlePage.checkComment(article.tagList[2]);
+      articlePage.checkTag([article.tagList[0], article.tagList[1]]);
     });
   });
 

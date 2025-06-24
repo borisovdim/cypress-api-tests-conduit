@@ -1,3 +1,6 @@
+/// <reference types="cypress" />
+
+import './commands';
 import testUser from '../fixtures/test-user.json';
 
 before(() => {

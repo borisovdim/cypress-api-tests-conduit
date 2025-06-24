@@ -1,20 +1,22 @@
+/// <reference types="cypress" />
+
 export class UserPage {
   getArticleByTitle(title: string) {
-    return cy.get("article-list")
-      .find("article-preview")
+    return cy.get("app-article-list")
+      .find(".article-preview")
       .should("contain", `${title}`);
   }
 
   getLikesIkon(title: string) {
     return cy.contains(title)
-      .parents("article-preview")
-      .find("favorite-btn");
+      .parents(".article-preview")
+      .find("app-favorite-button");
   }
 
   likeIsAdded(title: string) {
     cy.contains(title)
-      .parents("article-preview")
-      .find("favorite-btn button.btn-primary")
+      .parents(".article-preview")
+      .find("app-favorite-button button.btn-primary")
   }
 
 }

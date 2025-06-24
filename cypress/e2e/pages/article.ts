@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 export class Article {
 
   typeComment(text: string) {
@@ -5,7 +7,11 @@ export class Article {
   }
 
   postComment() {
-    cy.get('.card-footer button').click();
+    cy.get('button[type="submit"]').click();
+  }
+
+  commentIsAdded() {
+    cy.get('app-article-comment').should('exist');
   }
 
   checkContent(text: string) {
@@ -14,6 +20,12 @@ export class Article {
 
   checkComment(text: string) {
     cy.get('.card-text').should('contain', text);
+  }
+
+   checkTag(text: string[]) {
+    text.forEach(t => {
+      cy.get('.tag-list').should('contain', t);
+    })
   }
 
 }

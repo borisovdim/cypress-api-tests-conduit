@@ -2,7 +2,8 @@ import { defineConfig } from "cypress";
 
 export default defineConfig({
   e2e: {
-    baseUrl: "https://demo.realworld.io/",
+    baseUrl: "https://conduit.bondaracademy.com",
+    supportFile: 'cypress/support/index.ts',
     viewportHeight: 1080,
     viewportWidth: 1920,
     video: false,
@@ -13,7 +14,7 @@ export default defineConfig({
       // implement node event listeners here
     },
     env: {
-      apiBaseURL: 'https://api.realworld.io/api'
+      apiBaseURL: 'https://conduit-api.bondaracademy.com/api'
     }
   },
 });
